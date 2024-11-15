@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../shopping-strapi"
+		},
+		{
+			"path": "../cms-strapi-shopping"
+		}
+	],
+	"settings": {}
+}
