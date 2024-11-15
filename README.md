@@ -1,6 +1,6 @@
 # Coffee World
 
-# A Next.js Web Application for Coffee Lovers
+## A Next.js Web Application for Coffee Lovers
 
 ## Overview
 
