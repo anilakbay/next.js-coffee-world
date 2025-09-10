@@ -11,7 +11,7 @@ Built with modern web technologies and following industry best practices, Coffee
 
 ## 🚀 Live Demo
 
-[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://coffee-world.vercel.app)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://next-js-coffee-world.vercel.app)
 
 ## 📋 Project Status
 
