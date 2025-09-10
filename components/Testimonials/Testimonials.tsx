@@ -11,7 +11,7 @@ const TestimonialsData = [
     img: "/images/person/1.jpg",
     name: "Angelie Jul",
     description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est tenetur ducimus dolor nulla natus obcaecati",
+      "Coffee World has transformed my morning routine! Their premium blends are incredible and the community is amazing.",
     aosDelay: "100",
   },
   {
@@ -19,7 +19,7 @@ const TestimonialsData = [
     img: "/images/person/2.jpg",
     name: "Peper Pods",
     description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est tenetur ducimus dolor nulla natus obcaecati",
+      "As a coffee shop owner, I rely on Coffee World for trends and reviews. Their insights help me improve my menu!",
     aosDelay: "200",
   },
   {
@@ -27,7 +27,7 @@ const TestimonialsData = [
     img: "/images/person/3.jpg",
     name: "Bruce Wayne",
     description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est tenetur ducimus dolor nulla natus obcaecati",
+      "The quality of coffee reviews here is outstanding. I've discovered amazing coffee shops through this platform.",
     aosDelay: "300",
   },
   {
@@ -35,7 +35,7 @@ const TestimonialsData = [
     img: "/images/person/4.jpg",
     name: "Latte",
     description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est tenetur ducimus dolor nulla natus obcaecati",
+      "Coffee World's community is fantastic! I've connected with fellow coffee enthusiasts and learned brewing methods.",
     aosDelay: "400",
   },
   {
@@ -43,7 +43,7 @@ const TestimonialsData = [
     img: "/images/person/5.jpg",
     name: "Angel Wick",
     description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est tenetur ducimus dolor nulla natus obcaecati",
+      "This platform has elevated my coffee experience! The expert reviews and community discussions are amazing.",
     aosDelay: "500",
   },
   {
@@ -51,7 +51,7 @@ const TestimonialsData = [
     img: "/images/person/6.jpg",
     name: "Arya Stark",
     description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est tenetur ducimus dolor nulla natus obcaecati",
+      "I love how Coffee World brings together coffee lovers worldwide. The reviews are honest and detailed.",
     aosDelay: "600",
   },
   {
@@ -59,47 +59,66 @@ const TestimonialsData = [
     img: "/images/person/7.jpg",
     name: "Bruce Banner",
     description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est tenetur ducimus dolor nulla natus obcaecati",
+      "Coffee World has become my go-to source for all things coffee. The quality of content is outstanding!",
     aosDelay: "700",
+  },
+  {
+    id: 8,
+    img: "/images/person/1.jpg",
+    name: "Sarah Johnson",
+    description:
+      "The coffee recommendations here are spot-on! I've discovered amazing local roasters and learned brewing methods.",
+    aosDelay: "800",
+  },
+  {
+    id: 9,
+    img: "/images/person/2.jpg",
+    name: "Mike Chen",
+    description:
+      "As a barista, I appreciate the detailed reviews and brewing guides. Coffee World has helped me improve my skills!",
+    aosDelay: "900",
   },
 ];
 
 function Testimonials() {
   return (
-    <div className="py-10">
-      <div className="container">
+    <div className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-0 left-0 w-full h-full opacity-5">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-primary rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="container relative z-10">
         <div className="text-center mb-20">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-second2 font-bold">
-            Testimonials
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-second2 font-bold text-gray-800 mb-6">
+            What Our Customers Say
           </h1>
-
-          <div className="flex justify-center m-4">
-            <div
-              className="mb-6 h-1 w-full max-w-xl
-                     bg-gradient-to-r opacity-50
-                      from-primary to-secondary"
-            ></div>
-          </div>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+            Discover why thousands of coffee lovers trust Coffee World for their daily coffee experience
+          </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto"></div>
         </div>
 
         <Swiper
           slidesPerView={1}
-          spaceBetween={10}
+          spaceBetween={20}
           pagination={{
             clickable: true,
+            dynamicBullets: true,
           }}
           breakpoints={{
             640: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 30,
             },
             768: {
               slidesPerView: 3,
-              spaceBetween: 30,
+              spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 5,
-              spaceBetween: 40,
+              slidesPerView: 4,
+              spaceBetween: 50,
             },
           }}
           modules={[Pagination]}

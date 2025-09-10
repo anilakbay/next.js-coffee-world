@@ -8,30 +8,32 @@ const Menu = [
   {
     id: 1,
     name: "Home",
-    link: "/#",
+    link: "/#hero",
   },
   {
     id: 2,
     name: "Services",
-    link: "/#",
+    link: "/#services",
   },
   {
     id: 3,
     name: "About",
-    link: "/#",
+    link: "/#about",
   },
   {
     id: 4,
     name: "Contact",
-    link: "/#",
+    link: "/#contact",
   },
 ];
 
 const Navbar: React.FC = () => {
   return (
-    <div
-      className="bg-gradient-to-r from-secondary
-     to-secondary/75 shadow-lg text-light"
+    <nav
+      className="bg-gradient-to-r from-secondary/95 to-secondary/90 backdrop-blur-md
+     shadow-lg text-light border-b border-white/10 sticky top-0 z-50 transition-all duration-300"
+      role="navigation"
+      aria-label="Main navigation"
     >
       <div className="container py-3">
         <div className="flex items-center justify-between">
@@ -40,26 +42,26 @@ const Navbar: React.FC = () => {
             data-aos-once="true"
             data-aos-delay="300"
             className="font-pacifico
-                font-bold text-xl lg:text-3xl md:text-2xl
-                items-center justify-center flex gap-2"
+                font-bold text-xl lg:text-2xl md:text-xl
+                items-center justify-center flex gap-3 hover:scale-105 transition-transform duration-300"
           >
             <Image
               src="/images/logo/3.png"
-              alt=""
-              width={50}
-              height={50}
+              alt="Coffee World Logo"
+              width={40}
+              height={40}
+              className="drop-shadow-lg"
             ></Image>
-            Coffee World
+            <span>Coffee World</span>
           </div>
 
           <div
             data-aos="fade-down"
             data-aos-once="true"
             data-aos-delay="400"
-            className="hidden lg:flex items-center gap-3 
-                justify-between"
+            className="hidden lg:flex items-center gap-8"
           >
-            <ul>
+            <ul aria-label="Main menu" className="flex items-center gap-6">
               {Menu.map((menu) => (
                 <NavbarItem
                   link={menu.link}
@@ -74,7 +76,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

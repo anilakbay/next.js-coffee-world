@@ -18,25 +18,28 @@ const TestimonialItem: React.FC<TestimonialItemProps> = ({
       data-aos="fade-down"
       data-aos-once="false"
       data-aos-delay={aosDelay}
-      className="rounded-2xl bg-gradient-to-b from-primary to-brandDark/75  group 
-    relative shadow-xl md:max-w-96 w-full"
+      className="rounded-2xl bg-gradient-to-br from-primary via-secondary to-brandDark/90 group 
+    relative shadow-xl hover:shadow-2xl md:max-w-96 w-full transform hover:-translate-y-1 transition-all duration-300 border border-white/10"
     >
-      <div className="h-52">
+      <div className="h-32">
         <Image
-          alt=""
+          alt={`${name} profile picture`}
           src={img}
-          width={200}
+          width={120}
+          height={120}
           className="mx-auto
-            transform p-6 rounded-full group-hover:scale-110 transition
+            transform p-3 rounded-full group-hover:scale-110 transition
             duration-500"
-          height={200}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
         ></Image>
       </div>
 
-      <div className="p-4 text-center">
+      <div className="p-3 text-center">
         <div className="w-full">
           <h1
-            className="text-xl lg:text-2xl font-bold font-poppins 
+            className="text-lg lg:text-xl font-bold font-poppins 
                 text-light group-hover:text-white transition duration-500"
           >
             {name}
